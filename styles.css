@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-section{
+    background-image: url(/assets/Copyof24.png);
+    background-size: cover;
+    height: 100vh;
+    width: 98.9vw;
+}
