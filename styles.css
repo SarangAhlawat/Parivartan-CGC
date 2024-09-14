@@ -24,7 +24,7 @@
     cursor: pointer;
     transition: all 1s ease;
 }
-.nav-items {
+.nav-lists {
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -34,8 +34,11 @@
 
 }
 
-.nav-li{
+.nav-item{
     text-decoration: none;
     color: aliceblue;
+}
+
+.nav-li{
     list-style: none;
 }
