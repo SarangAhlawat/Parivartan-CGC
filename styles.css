@@ -6,7 +6,7 @@
 
 body {
 
-    background-image: url(/assets/chng_par.png);
+    background-image: url(/assets/designpar.png);
     background-size: cover;
     /* background-image: url(/assets/par_processed.png); */
 }
@@ -129,13 +129,13 @@ body {
     /* par-text is above rotate */
 }
 
-/* .rotate{
+.rotate{
 
     filter: drop-shadow(0.5px 0px 0px rgb(196, 196, 196)) 
     drop-shadow(-0.5px 0px 0px rgb(196, 196, 196)) 
     drop-shadow(0px 0.5px 0px rgb(196, 196, 196))
      drop-shadow(0px -0.5px 0px rgb(196, 196, 196));
-} */
+}
 .par-text img {
     filter: drop-shadow(3px 0px 0px white) drop-shadow(-3px 0px 0px white) drop-shadow(0px 3px 0px white) drop-shadow(0px -3px 0px white);
 }
