@@ -1,85 +1,24 @@
-/* General Styles for Smaller Devices */
-@media (max-width: 768px) {
-    .nav-lists {
-        width: 90%; /* Increase width for smaller screens */
-        left: 5%; /* Center-align on smaller screens */
+@media only screen and (max-width: 980px){
+    .main-section{
+        background-size: 150% 100%;
     }
-
-    .btn-center {
-        width: 6rem; /* Adjust button size */
-        top: 80vh; /* Adjust vertical position */
-        left: 50%; /* Center-align buttons */
-        transform: translateX(-50%); /* Center horizontally */
-    }
-
-    .rotate {
-        height: 20vh; /* Reduce size of rotating image */
-        left: 50%; /* Center-align rotating image */
-        top: 5vh; /* Adjust vertical position */
-        transform: translateX(-50%); /* Center horizontally */
-    }
-
     .par-text {
-        font-size: 50%; /* Reduce text size */
-        top: 45%; /* Adjust vertical position */
+        width: 100%;
     }
 
-    .par-text img {
-        height: 50vmin; /* Reduce height of text image */
-    }
 
-    .par-logo {
-        top: 1rem; /* Adjust top position */
-        left: 1rem; /* Adjust left position */
-        margin-left: 0; /* Remove extra margin */
-    }
-
-    .par-logo img {
-        height: 15vmin; /* Adjust logo size */
-    }
-
-    h1 {
-        font-size: 1.5rem; /* Adjust heading size for smaller screens */
-        text-align: center; /* Center-align heading */
-        margin-top: 2rem; /* Add margin to the top */
-    }
+.login-btn{
+    width: 50%;
+}
+.main-buttons{
+    gap: 10px;
+}
+.btn-center{
+    width: 100px;
+    font-size: small;
+    margin: 20px;
+    padding: 5px;
 }
 
-/* Styles for Very Small Devices (e.g., phones) */
-@media (max-width: 480px) {
-    .nav-lists {
-        flex-direction: column; /* Stack navigation items vertically */
-        width: 100%; /* Full width */
-        left: 0; /* Align to the left */
-        margin-top: 2rem; /* Add margin for spacing */
-    }
 
-    .nav-item {
-        padding: 1rem; /* Increase padding for touch targets */
-    }
-
-    .btn-center {
-        width: 5rem; /* Further adjust button size */
-        top: 85vh; /* Adjust vertical position */
-    }
-
-    .rotate {
-        height: 15vh; /* Further reduce size of rotating image */
-    }
-
-    .par-text {
-        font-size: 40%; /* Further reduce text size */
-    }
-
-    .par-text img {
-        height: 40vmin; /* Further reduce height of text image */
-    }
-
-    .par-logo img {
-        height: 10vmin; /* Further adjust logo size */
-    }
-
-    h1 {
-        font-size: 1.2rem; /* Further adjust heading size */
-    }
 }
