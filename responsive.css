@@ -1,42 +1,78 @@
-@media only screen and (max-width: 980px){
-    .main-section{
+@media only screen and (max-width: 980px) {
+    .main-section {
         background-size: 150% 100%;
     }
+
     .par-text {
-        width: 100%;
+        width: 90%; /* Adjust for smaller screens */
     }
 
+    .login-btn {
+        width: 50%;
+    }
 
-.login-btn{
-    width: 50%;
+    .main-buttons {
+        gap: 10px;
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .btn-center {
+        width: 100px;
+        font-size: small;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .abt-container {
+        width: 80%; /* Adjust for medium screens */
+        padding: 10px;
+        margin: 20px auto; /* Center and margin for medium screens */
+        font-size: smaller;
+    }
+
+    .contact-container h1 {
+        font-size: 1rem; /* Adjust font size */
+    }
 }
-.main-buttons{
-    gap: 10px;
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .main-section {
+        height: auto; /* Adjust height for mobile */
+        background-size: cover; /* Ensure background fits */
+    }
+
+    .par-text {
+        width: 100%; /* Full width */
+        font-size: larger; /* Adjust font size */
+    }
+
+    .login-btn {
+        width: 80%; /* Adjust button width for mobile */
+        font-size: medium;
+    }
+
+    .main-buttons {
+        gap: 5px;
+    }
+
+    .btn-center {
+        width: 80px; /* Smaller button width */
+        font-size: small;
+        margin: 10px;
+    }
+
+    .abt-container {
+        width: 90%; /* Adjust for mobile screens */
+        padding: 5px;
+        margin: 10px auto; /* Adjust margin for mobile screens */
+        font-size: smaller;
+    }
+
+    .contact-container h1 {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
 }
-.btn-center{
-    width: 100px;
-    font-size: small;
-    margin: 20px;
-    padding: 5px;
-}
-
-.abt-container{
-    width: 250px;
-    padding: 10px;
-    margin: 20px;
-    font-size: smaller;
-}
-
-.contact-container{
-    width: 100%;
-}
-.contact-container h1{
-    font-size: 10px;
-}
-
-
-
-
 
 
 
