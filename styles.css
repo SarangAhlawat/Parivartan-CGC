@@ -158,18 +158,18 @@
 
 
 .abt-container{
-    height: 50vmin;
-    width: 70vmin;
+    height: 70vmin;
+    width: 100vmin;
     text-align: justify;
     position: absolute;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%);
     margin-top: 10rem;
     border: 4px solid navy;
     padding: 3rem;
     border-radius: 4rem;
     background-color: rgba(0, 0, 0, 0.5);
-    color: khaki;
+    color: rgb(255, 252, 224);
     font-size: larger;
 }
 
@@ -203,4 +203,42 @@
 
 
 
+
+.abt-container {
+    transition: transform 1s, opacity 0.5s;
+    transform: scale(0.5); /* Initial scale */
+    opacity: 0; /* Initially invisible */
+  }
+  
+  .active {
+    transform: scale(1); /* Full size */
+    opacity: 1; /* Fully visible */
+  }
+  
+
+
+/* img reel scrol */
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap; /* Ensures that the images are displayed in a single line */
+    position: relative;
+
+  }
+
+  .scroll-image {
+    display: inline-block;
+    /* Make sure to adjust the width based on the image size or add multiple images */
+    width: auto; /* Let the image width adjust automatically */
+    animation: scroll-left 10s linear infinite; /* Adjust the duration for the scroll speed */
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%); /* Start from right outside the viewport */
+    }
+    to {
+      transform: translateX(-100%); /* Move to left outside the viewport */
+    }
+  }
 

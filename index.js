@@ -1,14 +1,17 @@
- // Wait for the page to fully load
- window.addEventListener('load', function () {
-    const preloader = document.getElementById('preloader');
-    const content = document.getElementById('content');
+window.addEventListener('scroll', function() {
+    const abtSection = document.getElementById('abt-section');
+    const sectionPosition = abtSection.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
 
-    // Add fade-out class for smooth transition
-    preloader.classList.add('fade-out');
+    console.log('Section position:', sectionPosition);
+    console.log('Screen height:', screenHeight); 
 
-    // Display the content and remove the preloader after the fade-out
-    setTimeout(() => {
-        preloader.style.display = 'none';
-        content.style.display = 'block';
-    }, 500); // Time matches the CSS transition duration
-});
+    // is in view
+    if (sectionPosition < screenHeight && sectionPosition > 0) {
+      console.log('Section in view, adding active class');
+      abtSection.classList.add('active'); //up and fade in
+    } else {
+      console.log('Section out of view, removing active class');
+      abtSection.classList.remove('active'); // down and fade out
+    }
+  });
