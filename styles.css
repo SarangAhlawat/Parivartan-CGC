@@ -1,43 +1,205 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.main-section{
-    background-image: url(/assets/Copyof24.png);
+
+body {
+
+    background-image: url(/assets/chng_par.png);
     background-size: cover;
+    /* background-image: url(/assets/par_processed.png); */
+}
+
+.main-section {
     height: 100vh;
     width: 98.9vw;
     overflow: hidden;
 }
-.login-btn{
-    border: 0.1rem solid white;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 6px;
-    padding: 0.2rem;
-    margin: 0.7rem;
 
-}
-.login-btn:hover{
-    /* height: 2.5rem; */
-    width: 3.5rem;
-    cursor: pointer;
-    transition: 0.3s;
-}
+
+/* navbar */
 .nav-lists {
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%; 
+    margin-top: 1rem;
+    width: 30%;
     left: 70%;
 
 }
 
-.nav-item{
+.nav-item {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: large;
 }
 
-.nav-li{
+.nav-li {
     list-style: none;
+    transition: transform 0.3s ease;
 }
+
+.login-btn {
+    border: 0.1rem solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.401);
+    border-radius: 12px;
+    font-size: large;
+    padding: 0.4rem;
+    margin: 0.7rem;
+    width: 5rem;
+    transition: transform 0.3s ease;
+
+}
+
+.login-btn:hover,
+.nav-li:hover {
+    /* height: 2.5rem; */
+    /* width: 3.5rem; */
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+
+
+/* center buttons */
+.main-buttons {
+    display: flex;
+    /* justify-content: center; */
+    gap: 5rem;
+    
+}
+
+.btn-center {
+    border: 0.1rem solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 17px;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 12rem;
+    margin-left: 0rem;
+    margin-right: 4rem;
+    position: relative;
+    top: 70vmin;
+    left: 33%;
+    transition: transform 0.3s ease;
+    z-index: 3;
+    font-size: x-large;
+}
+
+.btn-center:hover {
+    transform: scale(1.25);
+    /* width: 10rem; */
+}
+
+.btn-exp {
+    background-color: rgb(160, 220, 255);
+    border-color: navy;
+    color: navy;
+}
+
+.btn-reg {
+    background-color: navy;
+    border-color: navajowhite;
+    color: navajowhite;
+}
+
+
+/* logos */
+/* using keyframe */
+.rotate {
+    animation: rotate 5s infinite linear;
+    transform-origin: center;
+    /* rotates around the center */
+    display: inline-block;
+    /* block-level element for rotation */
+    position: relative;
+    left: 72.2vmin;
+    top: 6.5vmin;
+    opacity: 0.97;
+}
+
+.par-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* par-text is above rotate */
+}
+
+/* .rotate{
+
+    filter: drop-shadow(0.5px 0px 0px rgb(196, 196, 196)) 
+    drop-shadow(-0.5px 0px 0px rgb(196, 196, 196)) 
+    drop-shadow(0px 0.5px 0px rgb(196, 196, 196))
+     drop-shadow(0px -0.5px 0px rgb(196, 196, 196));
+} */
+.par-text img {
+    filter: drop-shadow(3px 0px 0px white) drop-shadow(-3px 0px 0px white) drop-shadow(0px 3px 0px white) drop-shadow(0px -3px 0px white);
+}
+
+
+.par-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1rem;
+}
+
+/* using keyframe */
+.par-logo img {
+    height: 20vmin;
+    animation: slideLogo 2s ease-out;
+}
+
+
+
+
+.abt-container{
+    height: 50vmin;
+    width: 70vmin;
+    text-align: justify;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10rem;
+    border: 4px solid navy;
+    padding: 3rem;
+    border-radius: 4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: khaki;
+    font-size: larger;
+}
+
+
+
+
+
+/* keyframe for lanimations*/
+@keyframes slideLogo {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    
+    100% {
+        clip-path: inset(0 0 0 0);
+        /* full image visible from left to right */
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
