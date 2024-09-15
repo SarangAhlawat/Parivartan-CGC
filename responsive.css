@@ -20,5 +20,28 @@
     padding: 5px;
 }
 
+.abt-container{
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    font-size: smaller;
+}
+
+.contact-container{
+    width: 100%;
+}
+.contact-container h1{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 }
