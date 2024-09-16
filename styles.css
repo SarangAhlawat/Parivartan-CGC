@@ -87,6 +87,7 @@ body {
     transition: transform 0.3s ease;
     z-index: 3;
     font-size: x-large;
+    text-align: center;
 }
 
 .btn-center:hover {

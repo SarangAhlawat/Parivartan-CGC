@@ -4,7 +4,7 @@
     }
 
     .par-text {
-        width: 90%; /* Adjust for smaller screens */
+        width: 90%; 
     }
 
     .login-btn {
@@ -13,7 +13,7 @@
 
     .main-buttons {
         gap: 10px;
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; 
     }
 
     .btn-center {
@@ -24,31 +24,31 @@
     }
 
     .abt-container {
-        width: 80%; /* Adjust for medium screens */
+        width: 80%; 
         padding: 10px;
-        margin: 20px auto; /* Center and margin for medium screens */
+        margin: 20px auto;
         font-size: smaller;
     }
 
     .contact-container h1 {
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem;
     }
 }
 
-/* For mobile devices */
+
 @media only screen and (max-width: 600px) {
     .main-section {
-        height: auto; /* Adjust height for mobile */
-        background-size: cover; /* Ensure background fits */
+        height: auto; 
+        background-size: cover;
     }
 
     .par-text {
-        width: 100%; /* Full width */
-        font-size: larger; /* Adjust font size */
+        width: 100%; 
+        font-size: larger; 
     }
 
     .login-btn {
-        width: 80%; /* Adjust button width for mobile */
+        width: 80%; 
         font-size: medium;
     }
 
@@ -57,21 +57,29 @@
     }
 
     .btn-center {
-        width: 80px; /* Smaller button width */
+        width: 80px; 
         font-size: small;
         margin: 10px;
     }
 
     .abt-container {
-        width: 90%; /* Adjust for mobile screens */
+        width: 90%;
         padding: 5px;
-        margin: 10px auto; /* Adjust margin for mobile screens */
+        margin: 10px auto; 
         font-size: smaller;
     }
 
     .contact-container h1 {
-        font-size: 0.8rem; /* Smaller font size for mobile */
+        font-size: 0.5rem; 
+        margin-top: 20px;
     }
+
+.contact-container img {
+    width: 80%;
+}
+
+
+
 }
 
 
@@ -80,4 +88,3 @@
 
 
 
-}
